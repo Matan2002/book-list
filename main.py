@@ -34,3 +34,24 @@ def delete_book(book_id: int):
             books.remove(book)
             return {"message": "Book deleted"}
     raise HTTPException(status_code=404, detail="Book not found")
+books = [
+    {
+        "id": 1,
+        "title": "The Da Vinci Code",
+        "author": "Dan Brown",
+        "year":1988
+    },
+    {
+        "id": 2,
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "year":1948,
+    },
+    {
+        "id": 3,
+        "title": "The Martian",
+        "author": "Andy Weir",
+        "year":2008
+
+    }
+]
